@@ -200,31 +200,16 @@
   /**
    * Testimonials slider
    */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40
-      },
+   AOS.init();
 
-      1200: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      }
-    }
-  });
+   var swiper = new Swiper(".mySwiper", {
+       slidesPerView: 7,
+       spaceBetween: 30,
+       pagination: {
+         el: ".swiper-pagination",
+         clickable: true
+       }
+     });
 
   /**
    * Animation on scroll
