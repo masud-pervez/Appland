@@ -102,19 +102,18 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--color-primary);
 }
 .navbar .getstarted, .navbar .getstarted:focus {
-  border: 2px solid var(--color-primary);
-  color: var(--color-primary);
+  background:var(--color-primary);
+  color: #fff;
   padding: 12px 25px;
   margin-left: 30px;
-  color: var(--color-primary);
+  color: #fff;
   line-height: 1;
   border-radius: 50px;
-  transition: all 0.2s;
 }
+
 .navbar .getstarted:hover, .navbar .getstarted:focus:hover {
   background: #748ec6;
   color: #fff;
-  outline: rgba(255, 255, 255, 0.95);
 }
 .navbar .dropdown ul {
   display: block;
@@ -665,7 +664,13 @@ section {
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-
+.testimonial-img{
+  width: 90px;
+  border-radius: 10px;
+  border: 6px solid #fff;
+  position: absolute;
+  left: -45px;
+}
 .carousel .carousel-item {
 	color: #999;
 	overflow: hidden;
@@ -675,6 +680,7 @@ section {
 .carousel .media img {
 	width: 80px;
 	height: 80px;
+  margin-right: 100px;
 	display: block;
   border: 7px solid var(--color-white);
   border-radius: 4px;
@@ -1104,4 +1110,32 @@ section {
     text-align: center;
     padding: 5px 0;
   }
+}
+
+/* back to top */
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #5777ba;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+.back-to-top i {
+  font-size: 24px;
+  color: #fff;
+  line-height: 0;
+}
+.back-to-top:hover {
+  background: #748ec6;
+  color: #fff;
+}
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
 }
