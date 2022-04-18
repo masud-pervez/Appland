@@ -203,7 +203,7 @@
    AOS.init();
 
    var swiper = new Swiper(".mySwiper", {
-       slidesPerView: 7,
+       slidesPerView:6,
        spaceBetween: 30,
        pagination: {
          el: ".swiper-pagination",
